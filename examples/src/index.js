@@ -7,4 +7,7 @@ const App = () => (
     ウィメンズウェア100年史
   </AmazonBlock>
 );
-render(<App />, document.getElementById("root"));
+
+render(<App />, document.getElementById("box1"));
+render(<App />, document.getElementById("box2"));
+render(<App />, document.getElementById("box3"));

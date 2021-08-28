@@ -7,7 +7,7 @@
 .amazon .itemBox {
   display: grid;
   grid-template-columns: minmax(100px, 200px) minmax(100px, auto);
-  grid-template-rows: minmax(100px, 70%) minmax(100px, auto);
+  grid-template-rows: minmax(100px, 150px) minmax(1rem, 50px);
   padding: 2em 0;
   color: inherit;
   text-decoration: none;
