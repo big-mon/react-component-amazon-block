@@ -1,10 +1,28 @@
 {
+  "name": "@big-mon/react-component-amazon-block",
+  "description": "React Component For Amazon.co.jp Item Block",
+  "keywords": [
+    "amazon",
+    "react",
+    "component",
+    "blog"
+  ],
+  "author": {
+    "name": "Mon",
+    "url": "https://github.com/big-mon"
+  },
+  "homepage": "https://github.com/big-mon/react-component-amazon-block",
+  "bugs": "https://github.com/big-mon/react-component-amazon-block",
+  "license": "MIT",
+  "version": "1.0.0",
+  "main": "dist/index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "transpile": "babel src -d dist --copy-files",
     "build": "webpack --mode production",
     "deploy": "gh-pages -d examples/dist",
-    "publish-demo": "npm run build && npm run deploy"
+    "publish-demo": "npm run build && npm run deploy",
+    "prepublishOnly": "npm run transpile"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",
@@ -21,5 +39,9 @@
     "webpack": "^5.51.1",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.0.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
