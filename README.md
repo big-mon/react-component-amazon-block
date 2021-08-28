@@ -4,21 +4,50 @@ For Amazon.co.jp Item Block.
 
 Amazon.co.jp 用の商品ブロックとして使用します。
 
-## How to Use
+## Examples
+
+[DEMO](https://big-mon.github.io/react-component-amazon-block/)
+
+## Installation
+
+```
+npm install --save @big-mon/react-component-amazon-block
+```
+
+or
+
+```
+yarn add @big-mon/react-component-amazon-block
+```
+
+## Usage
 
 ```js
-import { AmazonBlock } from "../../src";
+import { AmazonBlock } from "@big-mon/react-component-amazon-block";
 
 const App = () => (
-  <AmazonBlock asin={"ASIN_CODE"} id={"YOUR_AFFILIATE_CODE"}>
-    ITEM_NAME
-  </AmazonBlock>
+  <div className="wrapper">
+    <AmazonBlock asin={"ASIN_CODE"} id={"YOUR_AFFILIATE_CODE"}>
+      ITEM_NAME
+    </AmazonBlock>
+  </div>
 );
 ```
 
-### Examples
+**For Next.js User**
 
-[DEMO](https://big-mon.github.io/react-component-amazon-block/)
+If you use `Next.js`, you need additional install **`next-transpile-modules`**.
+
+```js:next.config.js
+// next.config.js
+const withTM = require("next-transpile-modules")([
+  "@big-mon/react-component-amazon-block",
+]);
+
+module.exports = withTM({
+  ...
+});
+```
 
 ## API
 
