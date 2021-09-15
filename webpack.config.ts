@@ -8,7 +8,6 @@ interface Configuration extends WebpackConfiguration {
 }
 
 const config: Configuration = {
-  mode: "development",
   entry: path.join(__dirname, "examples/src/index.js"),
   output: {
     path: path.join(__dirname, "examples/dist"),

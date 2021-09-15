@@ -20,7 +20,7 @@
     "start": "webpack-dev-server --mode development",
     "build": "tsc",
     "deploy": "gh-pages -d examples/dist",
-    "publish-demo": "yarn build && yarn deploy",
+    "publish-demo": "yarn build && webpack --mode production && yarn deploy",
     "prepublishOnly": "yarn build"
   },
   "devDependencies": {
