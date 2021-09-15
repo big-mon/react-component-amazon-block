@@ -4,7 +4,11 @@ type Props = {
   children: React.ReactNode;
 };
 
-/** Amazon商品ブロック */
+/** Amazon商品ブロック
+ * @param id Your Amazon Affiliate ID
+ * @param asin Amazon Item ASIN code
+ * @param children alt text
+ */
 export const AmazonBlock = ({ id = "", asin, children }: Props) => {
   const amazonUrl = `https://www.amazon.co.jp/gp/product/`;
   const itemUrl = amazonUrl + asin + (id == "" ? "" : "/?tag=" + id);
