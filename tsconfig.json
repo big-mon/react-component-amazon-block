@@ -2,12 +2,14 @@
   "compilerOptions": {
     "target": "es2020",
     "module": "es2020",
+    "moduleResolution": "node",
     "strict": true,
     "skipLibCheck": true,
     "allowJs": true,
     "esModuleInterop": true,
-    "moduleResolution": "node",
     "typeRoots": [ "node_modules/@types"],
+    "newLine": "lf",
+    "declaration": true,
     "outDir": "./dist",
     "jsx": "react-jsx"
   },
