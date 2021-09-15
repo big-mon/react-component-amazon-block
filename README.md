@@ -85,9 +85,3 @@ yarn run publish-demo
 ```bash
 npm publish --access=public
 ```
-
-## Special Thanks
-
-I read.
-
-- [React コンポーネントを npm で公開する（GitHub Pages 付き、Babel7、webpack4）](https://qiita.com/Takumon/items/945335b0e0fa035f2201)
