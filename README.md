@@ -80,6 +80,14 @@ go to `http:localhost:3001`.
 yarn run publish-demo
 ```
 
+### check package content
+
+```bash
+npm pack
+```
+
+create `.tgz` file at `./`, import your test app.
+
 ### publish npm package
 
 ```bash

@@ -1,6 +1,0 @@
-src
-examples
-.gitignore
-tsconfig.json
-webpack.config.ts
-yarn.lock

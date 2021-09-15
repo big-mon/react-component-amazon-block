@@ -16,6 +16,10 @@
   "license": "MIT",
   "version": "1.0.3",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "tsc",
