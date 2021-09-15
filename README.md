@@ -61,7 +61,7 @@ module.exports = withTM({
 ### transpile component source
 
 ```bash
-yarn transpile
+yarn build
 ```
 
 transpiled files create at `/dist`.
