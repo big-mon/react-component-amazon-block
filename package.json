@@ -14,7 +14,7 @@
   "homepage": "https://github.com/big-mon/react-component-amazon-block",
   "bugs": "https://github.com/big-mon/react-component-amazon-block/issues",
   "license": "MIT",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
