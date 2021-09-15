@@ -21,7 +21,8 @@
     "build": "tsc",
     "deploy": "gh-pages -d examples/dist",
     "publish-demo": "yarn build && webpack --mode production && yarn deploy",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build",
+    "postpublish": "yarn publish-demo"
   },
   "devDependencies": {
     "@types/react": "^17.0.21",
