@@ -34,11 +34,15 @@ const App = () => (
 );
 ```
 
-**For Next.js User**
+Default `AmazonBlock` component has **no styles, only have className**, for freedom customize.
+
+If you will use DEMO's style, you can find styles at `./styles`. Choose `.css`, `.scss` etc...
+
+### For Next.js User
 
 If you use `Next.js`, you need additional install **`next-transpile-modules`**.
 
-```js:next.config.js
+```js
 // next.config.js
 const withTM = require("next-transpile-modules")([
   "@big-mon/react-component-amazon",
@@ -47,6 +51,29 @@ const withTM = require("next-transpile-modules")([
 module.exports = withTM({
   ...
 });
+```
+
+#### CSS Module
+
+```js
+// AmazonItem.tsx
+import { AmazonBlock } from "@big-mon/react-component-amazon";
+import styles from "./styles/amazon.module.scss";
+
+type Props = {
+  asin: string,
+  children: React.ReactNode,
+};
+
+export function AmazonItem() {
+  return (
+    <div className={styles.amazonBox}>
+      <AmazonBlock asin={"ASIN_CODE"} id={"YOUR_AFFILIATE_CODE"}>
+        ITEM_NAME
+      </AmazonBlock>
+    </div>
+  );
+}
 ```
 
 ## API
