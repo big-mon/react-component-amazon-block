@@ -1,6 +1,6 @@
-import React from "react";
 import { render } from "react-dom";
 import { AmazonBlock } from "../../src";
+import "./style.css";
 
 const App = () => (
   <AmazonBlock asin={"4908406766"} id={"TESTID"}>
