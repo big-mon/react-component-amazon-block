@@ -1,4 +1,4 @@
-# react-component-amazon
+# @big-mon/react-component-amazon
 
 For Amazon.co.jp Item Block.
 
