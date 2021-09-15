@@ -58,8 +58,30 @@ module.exports = withTM({
 
 ## Memo
 
-update GitHub-Pages:
+### transpile component source
+
+```bash
+yarn build
+```
+
+transpiled files create at `/dist`.
+
+### check demo
+
+```bash
+yarn start
+```
+
+go to `http:localhost:3001`.
+
+### update demo page -> GitHub-Pages
 
 ```bash
 yarn run publish-demo
+```
+
+### publish npm package
+
+```bash
+npm publish --access=public
 ```

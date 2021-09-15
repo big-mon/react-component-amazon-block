@@ -1,12 +1,11 @@
-import React from "react";
-import "./style.css";
+type Props = {
+  id: string;
+  asin: string;
+  children: React.ReactNode;
+};
 
-/**
- * Amazon商品ブロック
- * @param id amazon affiliate id
- * @param asin item's asin code
- */
-export function AmazonBlock({ id = "", asin, children }) {
+/** Amazon商品ブロック */
+export const AmazonBlock = ({ id = "", asin, children }: Props) => {
   const amazonUrl = `https://www.amazon.co.jp/gp/product/`;
   const itemUrl = amazonUrl + asin + (id == "" ? "" : "/?tag=" + id);
   const imageUrl = `https://images-na.ssl-images-amazon.com/images/P/${asin}.09.MZZZZZZZ`;
@@ -19,7 +18,7 @@ export function AmazonBlock({ id = "", asin, children }) {
           rel="noreferrer noopener external nofollow"
           target="_blank"
         >
-          <img src={imageUrl} alt={children} />
+          <img src={imageUrl} alt={children?.toString()} />
         </a>
       </div>
       <div className="itemName">
@@ -42,4 +41,4 @@ export function AmazonBlock({ id = "", asin, children }) {
       </div>
     </div>
   );
-}
+};
