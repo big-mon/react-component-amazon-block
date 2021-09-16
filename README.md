@@ -1,6 +1,6 @@
 # @big-mon/react-component-amazon
 
-For Amazon.co.jp Item Block.
+For _Amazon.co.jp_'s Item Block.
 
 Amazon.co.jp 用の商品ブロックとして使用します。
 
