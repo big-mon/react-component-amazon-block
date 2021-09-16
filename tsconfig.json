@@ -1,23 +1,24 @@
 {
   "compilerOptions": {
     "target": "es2020",
-    "module": "es2020",
+    "module": "esnext",
+    "outDir": "./dist",
+    "baseUrl": "src",
     "moduleResolution": "node",
+    "esModuleInterop": true,
     "strict": true,
     "skipLibCheck": true,
     "allowJs": true,
-    "esModuleInterop": true,
     "typeRoots": [ "node_modules/@types"],
     "newLine": "lf",
     "declaration": true,
-    "outDir": "./dist",
     "jsx": "react-jsx"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"],
   "ts-node": {
     "compilerOptions": {
-      "target": "es2020",
+      "target": "esnext",
       "module": "commonjs"
     }
   }
