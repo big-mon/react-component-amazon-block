@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2020",
+    "target": "es6",
     "module": "esnext",
     "outDir": "./dist",
     "baseUrl": "src",
@@ -9,7 +9,7 @@
     "strict": true,
     "skipLibCheck": true,
     "allowJs": true,
-    "typeRoots": [ "node_modules/@types"],
+    "typeRoots": ["node_modules/@types"],
     "newLine": "lf",
     "declaration": true,
     "jsx": "react-jsx"
